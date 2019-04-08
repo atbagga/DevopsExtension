@@ -12,13 +12,13 @@ Pre-requisites
 
 
 ## Parameter Description
- -organization : Organization url where the new wiki is to be hosted. e.g. https://dev.azure.com/officeorg
- -project : Project name where the new wiki is to be hosted. 
- -path : Folder path relative from root of repository from where new wiki is to be published. /Network-Team/TSGs/
- -repository : Name of the backing repository for the new wiki. e.g. NetworkTSGs (Wiki name will be created as NetworkTSGs.wiki)
- -wikiurl : [Required - if wikipath is not specified] Clone url of the wiki which is to be split. This can be some non wiki git repository also. e.g. https://dev.azure.com/officeorg/DefaultCollection/Office/_git/officewiki
- -wikipath : [Required - if wikiurl not specified] If the wiki to be split is already cloned locally then use this instead of wikiurl. Directory path where the wiki repository is already cloned locally. e.g. C:\officewiki\
- -commitmessage : Commit message for the new wiki. All files will be added with this in a single commit.
+ - **-organization** : Organization url where the new wiki is to be hosted. e.g. https://dev.azure.com/officeorg
+ - **-project** : Project name where the new wiki is to be hosted. 
+ - **-path** : Folder path relative from root of repository from where new wiki is to be published. /Network-Team/TSGs/
+ - **-repository** : Name of the backing repository for the new wiki. e.g. NetworkTSGs (Wiki name will be created as NetworkTSGs.wiki)
+ - **-wikiurl** : [Required - if wikipath is not specified] Clone url of the wiki which is to be split. This can be some non wiki git repository also. e.g. https://dev.azure.com/officeorg/DefaultCollection/Office/_git/officewiki
+ - **-wikipath** : [Required - if wikiurl not specified] If the wiki to be split is already cloned locally then use this instead of wikiurl. Directory path where the wiki repository is already cloned locally. e.g. C:\officewiki\
+ - **-commitmessage** : Commit message for the new wiki. All files will be added with this in a single commit.
 
 ## Sample usage
 
