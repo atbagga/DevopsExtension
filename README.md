@@ -3,7 +3,7 @@
 You can use the script in this repository to publish code repositories from different hierarchy from a repository. 
 You can split a code wiki/ project wiki into multiple code wikis.
 
-Pre-requisites 
+## Pre-requisites 
 1. Azure-Cli
 - Run `az login` to make sure `az devops project list --org <orgurl>` is working.
 
@@ -12,6 +12,7 @@ Pre-requisites
 
 
 ## Parameter Description
+
  - **-organization** : Organization url where the new wiki is to be hosted. e.g. https://dev.azure.com/officeorg
  - **-project** : Project name where the new wiki is to be hosted. 
  - **-path** : Folder path relative from root of repository from where new wiki is to be published. /Network-Team/TSGs/
@@ -38,7 +39,12 @@ split_wiki.ps1 -wikipath c:/officewiki/
 
 ![](WikiMigrationScript.gif)
 
+## Limitations
+
+1. Attachments directory is copied blindly in the split repository. This can add substantial size in some cases without using most of those files. 
+
 ## Troubleshooting
 
 1. `The user '' does not have permissions for the action.` You do not have appropriate permissions for creating a repository in the project. 
 1. git failure - Verify that the git clone is working on your machine for any repository in the same account. 
+1. If you see path too long issues in windows. Use `git config --system core.longpath true` to allow long paths in git. 
