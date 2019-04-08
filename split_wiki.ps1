@@ -134,7 +134,7 @@ Write-Host("Installing released version of devops extension.")
 az extension add -n azure-devops
 
 # reset git setting if we had set it 
-if(!($disable_longpath -eq 1)) {
+if($disable_longpath -eq 1) {
     git config --system core.longpaths false
 }
 
