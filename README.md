@@ -27,3 +27,8 @@ split_wiki.ps1
 ```
 
 ![](WikiMigrationScript.gif)
+
+## Troubleshooting
+
+1. `The user '' does not have permissions for the action.` You do not have appropriate permissions for creating a repository in the project. 
+1. git failure - Verify that the git clone is working on your machine for any repository in the same account. 
