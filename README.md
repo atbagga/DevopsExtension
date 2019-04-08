@@ -26,3 +26,4 @@ OR if you already have the wiki repo cloned locally you can skip the -wikiurl pa
 split_wiki.ps1 
 ```
 
+![](WikiMigrationScript.gif)
