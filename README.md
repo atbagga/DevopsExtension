@@ -10,16 +10,16 @@ Pre-requisites
 # Sample usage
 
 ```
-split_project_wiki.ps1 -wikiurl <wikiclone url>  -organization https://dev.azure.com/myorganization -project DevopsTest -path /Network/TeamA -repository TeamAWiki
+split_wiki.ps1 -wikiurl <wikiclone url>  -organization https://dev.azure.com/myorganization -project DevopsTest -path /Network/TeamA -repository TeamAWiki
 ```
 
 OR just invoke the script and use interactively - 
 ```
-split_project_wiki.ps1 -wikiurl <wikiclone url>  
+split_wiki.ps1 -wikiurl <wikiclone url>  
 ```
 
 OR if you already have the wiki repo cloned locally you can skip the -wikiurl param
 ```
-split_project_wiki.ps1 
+split_wiki.ps1 
 ```
 
