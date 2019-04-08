@@ -1,4 +1,4 @@
-# DevopsExtension
+# Azure Devops Wiki Splitter 
 
 You can use the script in this repository to publish code repositories from different hierarchy from a repository. 
 You can split a code wiki/ project wiki into multiple code wikis.
