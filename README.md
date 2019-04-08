@@ -7,7 +7,7 @@ Pre-requisites
 1. Azure-Cli
 - Run `az login` to make sure `az devops project list --org <orgurl>` is working.
 
-1. git
+2. git
 - Git credential manager should have the credentials. You can do this by cloning a private repo from the same account. Clone the repository you want to split and that can be reused in the script too. 
 
 # Sample usage
