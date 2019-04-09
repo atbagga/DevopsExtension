@@ -4,10 +4,10 @@ You can use the script in this repository to publish code repositories from diff
 You can split a code wiki/ project wiki into multiple code wikis.
 
 ## Pre-requisites 
-1. Azure-Cli
+1. Azure-Cli [Installation Documentation](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)
 - Run `az login` to make sure `az devops project list --org <orgurl>` is working.
 
-2. git
+2. Git.exe 
 - Git credential manager should have the credentials. You can do this by cloning a private repo from the same account. Clone the repository you want to split and that can be reused in the script too. 
 
 
@@ -42,6 +42,7 @@ split_wiki.ps1 -wikipath c:/officewiki/
 ## Limitations
 
 1. Attachments directory is copied blindly in the split repository. This can add substantial size in some cases without using most of those files. 
+1. History will be lost
 
 ## Troubleshooting
 
