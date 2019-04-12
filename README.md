@@ -27,7 +27,7 @@ split_wiki.ps1 -wikiurl _WikiCloneURl_  -organization _DevOpsOrganizationUrl_ -p
 
 * _Powershell execution policy on the machine might stop you from using the script. You can bypass the policy to run the script like this-_
 
-    `PowerShell.exe -ExecutionPolicy Bypass ./split_wiki -wikiurl <wikiclone url>  -organization https://dev.azure.com/myorganization -project DevopsTest -path /Network/TeamA -repository TeamAWiki --commitmessage 'Splitting my team wiki from main wiki'` 
+    **`PowerShell.exe -ExecutionPolicy Bypass`** `./split_wiki -wikiurl <wikiclone url>  -organization https://dev.azure.com/myorganization -project DevopsTest -path /Network/TeamA -repository TeamAWiki --commitmessage 'Splitting my team wiki from main wiki'` 
 
 ## Parameter Description
 
