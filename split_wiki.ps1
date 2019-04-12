@@ -143,8 +143,7 @@ try {
     git commit -am  $commitmessage
     git push
 
-    $wiki_to_create = $repository + '.wiki'
-    $wiki_obj = az devops wiki create --name $wiki_to_create --repository $repository --mapped-path / --type codewiki -v master -o json --org $organization --project $project
+    $wiki_obj = az devops wiki create --name $repository --repository $repository --mapped-path / --type codewiki -v master -o json --org $organization --project $project
 
     # uninstall devops extension 
     Write-Host("Uninstalling dev version of devops extension.")
