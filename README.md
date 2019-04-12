@@ -1,6 +1,6 @@
 # Azure Devops Wiki Splitter 
 
-You can use this script to publish code wikis from different hierarchies of an existing wiki
+You can use this script to publish code wikis from different hierarchies of an existing wiki. This helps you split a wiki into multiple wikis.
 
 ## Limitations
 
