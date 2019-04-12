@@ -43,7 +43,7 @@ split_wiki.ps1 -wikiurl _WikiCloneURl_  -organization _DevOpsOrganizationUrl_ -p
 ## Sample usage
 
 ```
-split_wiki.ps1 -wikiurl <wikiclone url>  -organization https://dev.azure.com/myorganization -project DevopsTest -path /Network/TeamA -repository TeamAWiki -commitmessage 'Automated - Split wiki from main wiki'
+split_wiki.ps1 -wikiurl https://baggaatul24.visualstudio.com/DefaultCollection/WikiMigrationScript/_git/abc123  -organization https://dev.azure.com/myorganization -project DevopsTest -path /Network/TeamA -repository TeamAWiki -commitmessage 'Automated - Split wiki from main wiki'
 ```
 
 OR
