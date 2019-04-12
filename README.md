@@ -5,7 +5,11 @@ You can split a code wiki/ project wiki into multiple code wikis.
 
 ## Pre-requisites 
 1. Azure-Cli [Installation Documentation](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)
-- Run `az login` to make sure `az devops project list --org <orgurl>` is working.
+- Run `az login`. Use the same AAD account which you use for devops login. 
+
+- Alternate option is to do login via Personal Access Token. You can run these commands - 
+    - `az extension add -n  azure-devops`
+    - `az devops login --org https://dev.azure.com/organizationname`
 
 2. Git.exe 
 - Git credential manager should have the credentials. You can do this by cloning a private repo from the same account. Clone the repository you want to split and that can be reused in the script too. 
