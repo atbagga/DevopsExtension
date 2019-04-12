@@ -8,7 +8,8 @@ You can split a code wiki/project wiki into multiple code wikis.
 Proceed to use the script if you are OK with the following limitations.
 
 1. Attachments directory is copied blindly in the split repository. This can add substantial size in some cases without using most of those files. 
-1. History will be lost
+1. File history will be lost. This will create a new wiki all revisions history of your pages will not be available in the new wiki.
+1. Links referring to files outside your area of split will be broken. 
 
 
 ## Pre-requisites 
