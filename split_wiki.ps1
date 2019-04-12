@@ -23,6 +23,7 @@ param(
 $script_directory = Get-Location
 
 try {
+
     $ErrorActionPreference = "Stop"
 
     $wiki_dir = Get-Location
@@ -128,7 +129,12 @@ try {
         $file_path = $folder_path + '.md'
         Copy-Item -Path $file_path -Destination $dest_dir    
     }
-
+    
+    if([string]::IsNullOrWhiteSpace($commitmessage))
+    {
+        $commitmessage = Read-Host 'Enter commit message (users will see this in revision history)'
+    }
+    
     if (!$commitmessage){
         $commitmessage = "Automated - splitting team wiki from main wiki"
     }
